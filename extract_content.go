@@ -186,7 +186,7 @@ func (e extractContent) getSiblingBaseScore(a *Article) uint {
 
 func (e extractContent) noParasWithoutTable(s *goquery.Selection) bool {
 	s.FindMatcher(pTags).Each(func(i int, s *goquery.Selection) {
-		if len(s.Text()) < 25 {
+		if len(s.Text()) < 50 {
 			s.Remove()
 		}
 	})
