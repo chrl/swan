@@ -104,6 +104,9 @@ var (
 		"h2, "+
 		"h3, "+
 		"h4,"+
+		"ul, "+
+		"ol, "+
+		"li, "+
 		"p span")
 	keepTags = cascadia.MustCompile("a, blockquote, dl, div," +
 		"img, ol, p, pre, table, ul")
